@@ -1,5 +1,5 @@
-import toml
 import nox
+import toml
 
 
 def get_dependencies() -> dict[str, str]:
@@ -16,8 +16,8 @@ DEPS = get_dependencies()
 def formatting(session: nox.Session) -> None:
     session.install("-U", DEPS["len8"], DEPS["isort"], DEPS["black"])
     session.run("len8")
-    session.run("isort", "chess")
-    session.run("black", "chess", "--check")
+    session.run("isort", ".", "-cq", "--profile", "black")
+    session.run("black", ".", "--check")
 
 
 @nox.session(reuse_venv=True)
