@@ -9,12 +9,12 @@ license = "MIT"
 python = ">=3.10,<3.12"
 
 [tool.poetry.dev-dependencies]
-pyright = "^0.0.13"
-black = "^21.12b0"
-isort = "^5.10.1"
-mypy = "^0.910"
-nox = "^2021.10.1"
-len8 = "^0.6.0"
+pyright = "~=0.0.13"
+black = "~=21.12b0"
+isort = "~=5.10.1"
+mypy = "~=0.910"
+nox = "~=2021.10.1"
+len8 = "~=0.6.0"
 
 [tool.black]
 line-length = 88
