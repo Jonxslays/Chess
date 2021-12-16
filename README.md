@@ -13,9 +13,22 @@ in a playable state.
 
 ## How to play
 
+Using pip:
+
 ```bash
 git clone "https://github.com/Jonxslays/Chess.git" && cd Chess
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 python -m chess
+```
+
+Using poetry:
+
+```bash
+git clone "https://github.com/Jonxslays/Chess.git" && cd Chess
+poetry install --no-dev
+poetry run python -m chess
 ```
 
 ## License
